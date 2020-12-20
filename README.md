@@ -1,4 +1,4 @@
-# Class Component State Lab
+# Class Component State and Events Lab
 
 ## Objectives
 
