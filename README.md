@@ -1,15 +1,16 @@
 # Class Component State and Events Lab
 
-## Objectives
+## Learning Goals
 
-- Practice refactoring function components to class components
+- Refactor a function component with `useState` to a class component
+- Handle events in class components using arrow functions
 
 ## Instructions
 
-In this lab is the working code from a previous lab, using function components.
-If you run the tests now, they should all pass, except for the tests checking
-that you are using class components instead of functions. Your goal is to
-refactor all the components in the `src/components` directory to use classes
+In this lab is the working code from a previous lesson, using function
+components. If you run the tests now, they should all pass, except for the tests
+checking that you are using class components instead of functions. Your goal is
+to refactor all the components in the `src/components` directory to use classes
 instead of functions, and _still_ have the tests passing.
 
 Start by familiarizing yourself with the code and the functionality, then work
