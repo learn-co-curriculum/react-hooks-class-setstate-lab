@@ -1,7 +1,12 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import ShoppingList from "../components/ShoppingList";
-import { isClassComponent } from "./utils";
+
+function isClassComponent(component) {
+  return (
+    typeof component === "function" && !!component.prototype.isReactComponent
+  );
+}
 
 const testData = [
   { id: 1, name: "Yogurt", category: "Dairy" },

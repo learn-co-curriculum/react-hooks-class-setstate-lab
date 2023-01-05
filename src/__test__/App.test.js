@@ -1,7 +1,12 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../components/App";
-import { isClassComponent } from "./utils";
+
+function isClassComponent(component) {
+  return (
+    typeof component === "function" && !!component.prototype.isReactComponent
+  );
+}
 
 test("uses a class component", () => {
   expect(isClassComponent(App)).toBe(true);
